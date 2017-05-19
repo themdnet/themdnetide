@@ -1,0 +1,32 @@
+<!--
+<ion-view view-title="">
+--> 
+<ion-view hide-nav-bar="true" view-title="Home">
+    <ion-content scroll="false">
+    <!--<div class="loader" ng-show="loading">Loading...</div>-->
+    <div class="fix_logo"><img class="logo" src="icon/logo-rassieh.png" alt="" /></div>
+        <div ng-controller="dbFrontpage">        
+            <div ng-repeat="front in data">
+                <div class="fix_frontpage">
+                    <img class="frontpage" data-ng-src="{{front.f_image}}" width="100%"/>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <div class="fix_section">  
+        <ion-grid class="section_">
+            <ion-row>
+                <ion-col col-3>
+                    <a ui-sref="news"> <img width="25%" src="icon/news.png" alt="" /></a>
+                    <a ui-sref="event"><img width="25%" src="icon/event.png" alt="" /></a>
+                    <a ui-sref="activity"><img width="25%" src="icon/activity.png" alt="" /></a>
+                </ion-col>
+                <ion-col col-3>
+                    <a ui-sref="rassieh"><img width="25%" src="icon/rassieh.png" alt="" /></a>
+                    <a ui-sref="gallery"><img width="25%" src="icon/gallery.png" alt="" /></a>
+                    <a ui-sref="about"><img width="25%" src="icon/about.png" alt="" /></a>      
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-view>

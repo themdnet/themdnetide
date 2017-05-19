@@ -1,0 +1,57 @@
+<ion-view view-title="About">
+<ion-content>
+    <div ng-controller="dbAbout">        
+        
+        <div ng-repeat="about in data">
+        
+            <div>{{about.a_title}}</div>
+        
+            <a style="{{about.a_style_address}}" {{about.a_link_address}} class="item item-icon-left">
+                <i class="icon {{about.a_icon_address}}"></i>
+                {{about.a_title_address}}
+            </a>
+            
+            <a style="{{about.a_style_link}}" {{about.a_link_line}} class="item item-icon-left">
+                <i class="icon {{about.a_icon_line}}"></i>
+                {{about.a_title_line}}
+            </a>
+            
+            <a style="{{about.a_style_link1}}" {{about.a_link_line1}} class="item item-icon-left">
+                <i class="icon {{about.a_icon_line1}}"></i>
+                {{about.a_title_line1}}
+            </a>
+            
+            <a style="{{about.a_style_link2}}" {{about.a_link_line2}} class="item item-icon-left">
+                <i class="icon {{about.a_icon_line2}}"></i>
+                {{about.a_title_line2}}
+            </a>
+            
+            <a style="{{about.a_style_email}}" {{about.a_link_email}} class="item item-icon-left">
+                <i class="icon {{about.a_icon_email}}"></i>
+                {{about.a_title_email}}
+            </a>
+            
+            
+            <a style="{{about.a_style_web}}" {{about.a_link_web}} class="item item-icon-left">
+                <i class="icon {{about.a_icon_web}}"></i>
+                {{about.a_title_web}}
+            </a>
+            
+            <a style="{{about.a_style_fb}}" {{about.a_link_fb}} class="item item-icon-left">
+                <i class="icon {{about.a_icon_fb}}"></i>
+                {{about.a_title_fb}}
+            </a>
+            
+            
+            <!--
+            
+            <a style="display:block" href="#" class="item item-icon-left"><i class="icon ion-home"></i>twitter</a>
+            <a style="display:block" href="#" class="item item-icon-left"><i class="icon ion-home"></i>twitter</a>
+            <a style="display:block" href="#" class="item item-icon-left"><i class="icon ion-home"></i>yahoo!</a>
+            <a style="display:block" href="#" class="item item-icon-left"><i class="icon ion-home"></i>custom1</a>    
+            <a style="display:block" href="#" class="item item-icon-left"><i class="icon ion-home"></i>custom2</a>
+            -->
+        </div>
+    </div>
+</ion-content>
+</ion-view>
